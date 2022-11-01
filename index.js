@@ -3,9 +3,7 @@ const app = new express()
 const fs = require("fs")
 const ytdl = require("ytdl-core")
 let description = "You need to provide an id for us to convert, like this! <br> http://localhost:3000/?id=watch?v=IUPYpZBfsMU <br> Jeff Geerling is the creator of the video and is a wonderful contributor to the RPI, open source and some other communities! <br> go check his content out!"
-app.use(function(req,res){
-    res.status(404).send("🍌, 404")
-});
+
 
 app.get('/mp4', async (req, res) => {
 	if(!req.query.id) return res.send(description)
@@ -28,5 +26,8 @@ app.get('/mp4', async (req, res) => {
 		res.send("Error!")
 	}
 })
+app.use(function(req,res){
+    res.status(404).send("🍌, 404")
+});
 app.listen(3000)
 console.log("The app.listen() has been executed!")
