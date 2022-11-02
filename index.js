@@ -73,5 +73,6 @@ app.get('/list', async (req, res) => {
 app.use(function(req,res){
     res.status(404).send("🍌, 404")
 });
-app.listen(3000)
-console.log("The app.listen() has been executed!")
+app.listen(3000, () => {
+  console.log(`Express is running on port ${port}`);
+})
