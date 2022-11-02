@@ -34,20 +34,25 @@ app.get('/mp4', async (req, res) => {
 })
 
 app.get('/mp3', async (req, res) => {
-	let mp3desc = "To download an MP3, you need to provide the id of the video.<br> http://localhost:3000/mp3?id=IUPYpZBfsMU <br>"
-	if(!req.query.id) return res.send(mp3desc)
-	if(fs.existSync(`./Audios/${req.query.id}.mp3`)) return res.send("You have already downloaded this before, delete this from the server first to download again!")
-	let stream = ytdl(req.query.id, {
-		quality: "highestaudio"
-	})
-	res.write("Downloading!")
-	ffmpeg(stream)
-	.audioBitrate(128)
-	.save(`./Audios/${req.query.id}.mp3`)
-	.on('end', () => {
-		res.write("Done!")
-		res.end()
-	})
+	try{
+		let mp3desc = "To download an MP3, you need to provide the id of the video.<br> http://localhost:3000/mp3?id=IUPYpZBfsMU <br>"
+		if(!req.query.id) return res.send(mp3desc)
+		if(fs.existSync(`./Audios/${req.query.id}.mp3`)) return res.send("You have already downloaded this before, delete this from the server first to download again!")
+		let stream = ytdl(req.query.id, {
+			quality: "highestaudio"
+		})
+		res.write("Downloading!")
+		ffmpeg(stream)
+		.audioBitrate(128)
+		.save(`./Audios/${req.query.id}.mp3`)
+		.on('end', () => {
+			res.write("Done!")
+			res.end()
+		})
+	}catch(e){
+		console.log(e)
+		return res.send("Error! Ensure link is working")
+	}
 })
 
 app.get('/list', async (req, res) => {
