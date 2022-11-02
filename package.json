@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1".
-    "deploy": "node . & clear"
+    "deploy": "node . >> log-file 2>> err-file & clear"
   },
   "author": "",
   "license": "ISC",
