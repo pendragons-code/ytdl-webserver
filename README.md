@@ -18,7 +18,7 @@ IUPYpZBfsMU (This video is made, owned and posted by jeff geerling and deserves 
 git clone https://github.com/pendragons-code/ytdl-webserver/
 cd ytdl-webserver
 npm i
-node .
+npm run deploy
 ```
 # What is this?
 A simple web server you can host in your home to download youtube videos and songs.        
