@@ -6,7 +6,7 @@ Maybe I'll play around with stuff like google drive, who knows? Needless to say 
 # Quick start guide:
 This webserver is hosted on port `3000`, so if you are hosting this on your local network, your link could look like these:
 ```
-192.168.x.x/mp4?=
+192.168.x.x/mp4?id=
 http://localhost:3000/mp4?id="VIDEO ID HERE"
 
 Video IDs look like this:
