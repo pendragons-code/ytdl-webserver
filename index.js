@@ -3,10 +3,14 @@ const app = new express()
 const fs = require("fs")
 const ytdl = require("ytdl-core")
 const path = require("path")
-const readline = require('readline')
 const ffmpeg = require("fluent-ffmpeg")
 let description = "You need to provide an id for us to convert, like this! <br> http://localhost:3000/mp4?id=IUPYpZBfsMU <br> Jeff Geerling is the creator of the video and is a wonderful contributor to the RPI, open source and some other communities! <br> go check his content out!"
 
+app.set("views", path.join(__dirname, "views"));
+app.set('view engine','ejs')
+app.get("/", (req, res) => {
+  res.render("index");
+});
 app.get('/mp4', async (req, res) => {
 	if(!req.query.id) return res.send(description)
 	try{	
