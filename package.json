@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1".
-    "deploy": "node . & exit"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "path": "^0.12.7",
+    "video-to-audio": "^1.0.1",
     "ytdl-core": "^4.11.2"
   }
 }
