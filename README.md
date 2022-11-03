@@ -28,5 +28,7 @@ Why make this when there are so many alternatives? Because some are filled wth a
 How am I supposed to know?      
 JK, here is my configuration:
 ```
-I have a raspberry pi that already uploads files to the SD card (not that I USB boot), and take that SD card and put it in my phone. If I want to, for any reason (I have a USB to sd card reader, a few of them actually.), I can keep multiple copies on different SD cards and use my network to share it with my devices.
+I have a raspberry pi that already uploads files to the SD card (not that I USB boot), and take that SD card and put it in my phone. 
+If I want to, for any reason (I have a USB to sd card reader, a few of them actually.), 
+I can keep multiple copies on different SD cards and use my network to share it with my devices.
 ```
