@@ -1,8 +1,7 @@
 # ytdl-webserver
 A simple webserver with ytdl-core features implemented. I may or may not add more stuff, do what you want!        
-Maybe I'll play around with stuff like google drive, who knows? Needless to say this repo is filled with junk and is just made so i can clone this on any device i need to donwload videos. Fork if you want!
-
-
+Maybe I'll play around with stuff like google drive, who knows? Needless to say this repo is filled with junk and is just made so i can clone this on any device i need to donwload videos. Fork if you want!             
+This is for downloading youtube videos with a sote that allows you to interact with it. Why can't I just use the cli? Good question. Ask people who don't want to use the terminal.
 # Quick start guide:
 This webserver is hosted on port `3000`, so if you are hosting this on your local network, your link could look like these:
 ```
