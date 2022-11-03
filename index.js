@@ -38,7 +38,7 @@ app.get('/mp3', async (req, res) => {
 	try{
 		let mp3desc = "To download an MP3, you need to provide the id of the video.<br> http://localhost:3000/mp3?id=IUPYpZBfsMU <br>"
 		if(!req.query.id) return res.send(mp3desc)
-		if(fs.existSync(`./Audios/${req.query.id}.mp3`)) return res.send("You have already downloaded this before, delete this from the server first to download again!")
+		if(fs.existsSync(`./Audios/${req.query.id}.mp3`)) return res.send("You have already downloaded this before, delete this from the server first to download again!")
 		let stream = ytdl(req.query.id, {
 			quality: "highestaudio"
 		})
