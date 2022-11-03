@@ -31,3 +31,5 @@ I have a raspberry pi that already uploads files to the SD card (not that I USB 
 If I want to, for any reason (I have a USB to sd card reader, a few of them actually.), 
 I can keep multiple copies on different SD cards and use my network to share it with my devices.
 ```
+# fluent-ffmpeg
+[here](https://www.npmjs.com/package/fluent-ffmpeg)
