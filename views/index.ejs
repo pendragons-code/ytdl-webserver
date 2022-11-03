@@ -9,12 +9,14 @@
 <form id="JustAForm">
 	<label for="YoutubeVideoID">Download an MP4</label><br>
 	<input type="text", id="YoutubeVideoID"><br><br>
+	<label for="IPddress">Ip address (if none, just leave localhost here)</label><br>
+	<input type="text", id="IPaddress"><br><br>
 <form>
 <button onclick="GETURL()">Get URL</button>
 	<script>
 		function GETURL(){
 			var x = document.getElementById("JustAForm")
-			document.write(`http://localhost:3000/mp4?id=${x.elements[0].value}`)
+			document.write(`http://${x.elements[1].value}:3000/mp4?id=${x.elements[0].value}`)
 		}
 	</script>
 </body>
