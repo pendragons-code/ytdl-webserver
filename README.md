@@ -31,5 +31,8 @@ I have a raspberry pi that already uploads files to the SD card (not that I USB 
 If I want to, for any reason (I have a USB to sd card reader, a few of them actually.), 
 I can keep multiple copies on different SD cards and use my network to share it with my devices.
 ```
+# Actual use case:
+You can actually just install this and host it on your pc when you want to and it will just go accordingly. However, you must ensure you have nodejs, npm and dependecies to run this. Git is just used to clone this here so you can avoid that if you just decided to download this as a zip and just installed the things you need.
+
 # fluent-ffmpeg
 [here](https://www.npmjs.com/package/fluent-ffmpeg)
