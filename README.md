@@ -36,3 +36,8 @@ You can actually just install this and host it on your pc when you want to and i
 
 # fluent-ffmpeg
 [here](https://www.npmjs.com/package/fluent-ffmpeg)
+
+
+# Oh yes
+
+It seems that fluent-ffmpeg does not seem to work all the time if you do not have ffmpeg installed, so pls do so in your use case.
