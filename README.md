@@ -40,4 +40,5 @@ You can actually just install this and host it on your pc when you want to and i
 
 # Oh yes
 
-It seems that fluent-ffmpeg does not seem to work all the time if you do not have ffmpeg installed, so pls do so in your use case.
+It seems that fluent-ffmpeg does not seem to work all the time if you do not have ffmpeg installed, so pls do so in your use case.    
+    [here ya stinkies.](https://ffmpeg.org/)
