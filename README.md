@@ -2,9 +2,9 @@
 A simple webserver with ytdl-core features implemented. I may or may not add more stuff, do what you want!        
 Maybe I'll play around with stuff like google drive, who knows? Needless to say this repo is filled with junk and is just made so i can clone this on any device i need to donwload videos. Fork if you want!             
 This is for downloading youtube videos with a sote that allows you to interact with it. Why can't I just use the cli? Good question. Ask people who don't want to use the terminal. JKJK I ended up using this because I often find myself in the following situations:     
-    1. I'm a linux/bsd/unix like operating system kinda guy and don't like using windows, but am put in a sitation to download videos on a system as such. So I really DK how to get that shit working.
-    2. I dont want to see hot single mums in my area. I'm asexual and would rather see smouldering hot single servers in my area. I'll start mining monero on that shit.
-    3. Being able to host this on my personal server and letting download remotely is kinda fun and if i really want to get it to share on multiple devices, i upload stuff to google drive or something like that.
+1. I'm a linux/bsd/unix like operating system kinda guy and don't like using windows, but am put in a sitation to download videos on a system as such. So I really DK how to get that shit working.
+2. I dont want to see hot single mums in my area. I'm asexual and would rather see smouldering hot single servers in my area. I'll start mining monero on that shit.
+3. Being able to host this on my personal server and letting download remotely is kinda fun and if i really want to get it to share on multiple devices, i upload stuff to google drive or something like that.
 
 # Quick start guide:
 
