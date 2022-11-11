@@ -60,17 +60,19 @@ app.get('/list', async (req, res) => {
 	const directoryPath = path.join(__dirname, "Videos")
 	fs.readdir(directoryPath, function (err, files){
 		if(err) return res.send("Could not scan directory.\n\n" + err)
-		if(files.length === 0) res.write("Directory Videos empty!")
+		if(files.length === 0) res.write("Directory Videos empty!\n")
+		console.log("Videos:\n")
 		files.forEach(function (file){
-			res.write(`${file}`)
+			res.write(`${file}\n`)
 		})
 	})
 	const directoryAudio = path.join(__dirname, "Audios")
 	fs.readdir(directoryAudio, function (err, files){
 		if(err) return res.send("Could not scan directory.\n\n" + err)
 		if(files.length === 0) return res.send("Directory Audios empty!")
+		console.log("\nAudios:\n")
 		files.forEach(function (file){
-			res.write(`${file}`)
+			res.write(`${file}\n`)
 		})
 		res.end()
 	})
