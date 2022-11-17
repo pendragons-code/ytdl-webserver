@@ -1,5 +1,5 @@
 const express = require("express")
-Const port = 3000
+const port = 3000
 const app = new express()
 const fs = require("fs")
 const ytdl = require("ytdl-core")
