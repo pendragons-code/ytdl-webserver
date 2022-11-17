@@ -1,3 +1,7 @@
+# So Erm apparently this idea never popped into my head, make a site that anybody can go to and download from there directly instead of well... doing this... So erm for that I will end up probably making changes to this repo and not make a new one. What about those using features that already exist??? For that, I will just leave it as it is and the new features I may choose to implement will not have any of these other stuff involved. I may also add tokens for owner only shit and that means we can disable certain features that we do not want. Either that or we make a new repo specifically to download on user end devices.
+
+
+
 # ytdl-webserver
 A simple webserver with ytdl-core features implemented. I may or may not add more stuff, do what you want!        
 Maybe I'll play around with stuff like google drive, who knows? Needless to say this repo is filled with junk and is just made so i can clone this on any device i need to donwload videos. Fork if you want!             
