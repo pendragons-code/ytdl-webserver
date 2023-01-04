@@ -1,5 +1,5 @@
 const express = require("express")
-const port = 8000
+const port = 3000
 const app = new express()
 const fs = require("fs")
 const ytdl = require("ytdl-core")
@@ -56,28 +56,40 @@ app.get('/mp3', async (req, res) => {
 	}
 })
 
-app.get('/list', async (req, res) => {
-	fs.readdir("./Videos", function (err, files){
-		if(err) res.send("Could not scan directory.\n\n" + err)
-		if(files.length === 0) res.write("Directory Videos empty!\n")
-		console.log("Videos:\n")
-		files.forEach(function (file){
-			res.write(`${file}\n`)
-			console.log(`${file}\n`)
-		})
-	})
 
-	fs.readdir("./Audios", function (err, files){
-		if(err) return res.send("Could not scan directory.\n\n" + err)
-		if(files.length === 0) return res.write("Directory Audios empty!")
-		console.log("\nAudios:\n")
-		files.forEach(function (file){
-			res.write(`${file}\n`)
-			console.log(`${file}\n`)
-		})
-		//res.end()
+
+
+
+
+
+app.get('/list', async (req, res) => {
+	await res.write("Scanning!!!!!\n\n")
+	VideoFileNames = await fs.readdirSync("./Videos")
+	if(VideoFileNames.length == 0) res.write("Empty!")
+	await res.write("Videos:\n")
+	await VideoFileNames.forEach(async file => {
+		await res.write(`${file}\n`)
 	})
+	await res.write("\n\n")
+	await res.write("Audios:\n")
+	AudioFileNames = await fs.readdirSync("./Audios")
+	if(AudioFileNames.length == 0) res.write("Empty!")
+	await AudioFileNames.forEach(async file => {
+		await res.write(`${file}\n`)
+	})
+	res.end()
 })
+
+
+
+
+
+
+
+
+
+
+
 
 app.get("/stream", async (req, res) => {
 	if(!req.query.id) return res.send("You did not provide a video id!")
